@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        #example-div{
+            border: 3px dotted;
+            width: 300px;
+            height: auto;
+
+            margin: 10px;
+        }
+
+        .green{
+            background-color: greenyellow;
+        }
+
+        .red{
+            background-color: orangered;
+        }
+
+        .white{
+            background-color: antiquewhite;
+        }
+
+        .empty{
+            /*this is an empty class*/
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <button type="button" class="btn btn-success"
+            change-class-to="GreenDesign">
+        Go green
+    </button>
+
+    <button type="button" class="btn btn-danger"
+            change-class-to="RedDesign">
+        Go Red
+    </button>
+
+    <button type="button" class="btn btn-secondary"
+            change-class-to="DefaultWhite">
+        Go Default white
+    </button>
+
+    <button type="button" class="btn btn-link"
+            change-class-to="EmptyClass">
+        Go Empty Class
+    </button>
+
+    <!--
+        Change class template naming convention:
+
+        change-class-*
+
+        where * is a placeholder of one of the change-class-to attributes value.
+        This is case sensitive so EmptyClass is not the same as emptyClass or emptyclass.
+
+        When you click on one of the buttons which is marked by change-class-to attribute,
+        all html element will change where is a match, like
+        change-class-to="GreenDesign"
+         will trigger a change on all html elements where a
+        change-class-GreenDesign
+         attribute is found.
+        -->
+    <div id="example-div" class="white"
+         change-class-GreenDesign="green"
+         change-class-RedDesign="red"
+         change-class-DefaultWhite="white"
+         change-class-EmptyClass="empty">
+        <!--use:
+            change-class-EmptyClass="empty"
+            or
+            change-class-EmptyClass=""
+            or
+            change-class-EmptyClass
+
+            "EmptyClass" is just a name. You can use your names.
+             -->
+        Example div
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script data-main="../index.js" src="../lib/require.js"></script>
+</body>
+</html>
