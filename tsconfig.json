@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outFile": "./build/main.js"
+     //"module": "amd"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot/lib/*"
+  ],
+  "compileOnSave": true
+}
