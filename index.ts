@@ -3,5 +3,4 @@
 
 $(() => {
     let cc = new CC.ChangeClass();
-    console.log("hellooo6");
 });

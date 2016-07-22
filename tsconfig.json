@@ -5,7 +5,7 @@
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
-    "outFile": "./build/main.js"
+    "outFile": "./build/changeclass.js"
      //"module": "amd"
   },
   "exclude": [
