@@ -1,0 +1,38 @@
+{
+  "name": "change-class",
+  "version": "1.0.1",
+  "description": "Front end module. Helps change between css classes on html, based on click events. No need for writing javascript, it handles everything by html attributes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbotond90/ChangeClass.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "attribute",
+    "change",
+    "class",
+    "front end"
+  ],
+  "author": "Botond Bertalan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbotond90/ChangeClass/issues"
+  },
+  "homepage": "http://www.gleamexplorer.com/changeclass",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "^0.0.13",
+    "gulp-uglify": "^1.5.4",
+    "rimraf": "^2.5.4",
+    "jasmine-node": "^1.14.5"
+  }
+}
